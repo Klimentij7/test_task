@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Run everything else but real files through parse.php
+#RewriteCond %{HTTP_HOST} !^(admin|admintemplate)\.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(css|png|html|js|json|jpg|jpeg)$
+RewriteRule ^(.*)$ index.php?info=$1 [L]

@@ -1,0 +1,81 @@
+<div class="row">
+    <form>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-10">
+                    <label>SKU</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="sku" placeholder="SKU">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label>Price</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" name="price" placeholder="12.00">
+                </div>
+            </div>
+            <div class="row" id="sProduct">
+                <div class="col-10">
+                    <label>Size</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" name="size" placeholder="Size (MB)">
+                </div>
+            </div>
+            <div id="dProduct">
+                <div class="row" id="sProduct">
+                    <div class="col-10">
+                        <label>Height</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="height" placeholder="Height (CM)">
+                    </div>
+                </div>
+                <div class="row" id="sProduct">
+                    <div class="col-10">
+                        <label>Width</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="width" placeholder="Width (CM)">
+                    </div>
+                </div>
+                <div class="row" id="sProduct">
+                    <div class="col-10">
+                        <label>Lenght</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="length" placeholder="Lenght (CM)">
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="wProduct">
+                <div class="col-10">
+                    <label>Weight</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" name="weight" placeholder="Weight (MB)">
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <input type="radio" name="type" id="wP">Weight Products<br />
+            <input type="radio" name="type" id="sP">Size Products<br />
+            <input type="radio" name="type" id="dP">Dimension products<br />
+            <div class="row" id="wProduct">
+                <div class="col-10"><button id="send">Submit</button></div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </form>
+</div>

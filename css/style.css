@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+/*
+.content
+{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 40px;
+}
+p
+{
+    padding: 5px;
+}
+ul {
+    font-family: sans-serif;
+    display: inline-block;
+    min-width: 30%;
+    min-height: 10%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+}
+
+input {
+    display: block;
+    padding: 7px 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #fffefd;
+    min-height: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-size: larger;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+form {
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    width: 33.3%;
+    float: left;
+}*/
+
+.row::after {
+    display: table;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 75%;}
+.col-3 {width: 30%;}
+.col-10 {width: 10%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+ul {
+    font-family: sans-serif;
+    display: inline-table;
+    min-width: 30%;
+    min-height: 15%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    margin-right: 10px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+ul:hover {
+    background-color: #f9fff8;
+    ;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    font-family: 'Overpass', sans-serif;
+    font-size: larger;
+}
+#send {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+}
